@@ -35,12 +35,12 @@ Thank you for volunteering at Big Al's Virtual Pet Shelter and Delicatessen!
 
 This is the status of your pets:
 
-Name	  |Hunger	|Thirst	|Boredom
+Name	|Hunger	|Thirst	|Boredom
 --------|-------|-------|-------
-Joey	  |83     |34     |23
+Joey	|83     |34     |23
 Johnny	|69     |49     |2
 Dee Dee	|39     |18     |88
-Tommy	  |59     |19     |37
+Tommy	|59     |19     |37
 
 What would you like to do next?
 

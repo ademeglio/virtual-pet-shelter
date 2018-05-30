@@ -47,4 +47,12 @@ public class VirtualPetShelter {
 		}
 	}
 	
+	// iterate through pets and display them
+	public void allPetStatus(Collection<VirtualPet> pets) {
+		for (VirtualPet pet : pets) {
+			System.out.println(pet.getPetName() + "\t\t| " + pet.getHunger()
+				+ "\t\t| " + pet.getThirst() + "\t\t| " + pet.getBored()
+				+ "\t\t| " + pet.getTired() + "\t\t| ");
+		}
+	}
 }
