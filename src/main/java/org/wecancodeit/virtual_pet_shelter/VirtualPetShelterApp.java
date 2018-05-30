@@ -15,8 +15,18 @@ public class VirtualPetShelterApp {
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
+		
+		
+//		Game Loop
+		while (true) {
+			
+			// user input
+			
+			// tick
+			
+		} // End Game Loop
 
-}
+	} // End Main
+
+} // End VirtualPetShelter();
