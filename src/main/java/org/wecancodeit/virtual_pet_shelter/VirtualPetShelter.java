@@ -40,8 +40,11 @@ public class VirtualPetShelter {
 		virtualPets.get(petName).play(val);
 	}
 	
+	// update tick for all pets
+	public void updateAllTick(Collection<VirtualPet> pets) {
+		for (VirtualPet pet : pets) {
+			pet.tick();
+		}
+	}
 	
-
-
-
 }

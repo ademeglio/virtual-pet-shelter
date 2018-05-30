@@ -16,7 +16,7 @@ public class VirtualPetShelterApp {
 	
 	public static void main(String[] args) {
 
-		
+		System.out.println("Welcome to the DeMegz Sanctuary! Thank you for volunteering to help care for these fun little creatures!");
 		
 //		Game Loop
 		while (true) {
@@ -24,7 +24,7 @@ public class VirtualPetShelterApp {
 			// user input
 			
 			// tick
-			
+			break;
 		} // End Game Loop
 
 	} // End Main

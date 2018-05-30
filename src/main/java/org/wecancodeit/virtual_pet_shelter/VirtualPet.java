@@ -144,6 +144,10 @@ public class VirtualPet {
 		return name;
 	}
 	
+	public String getPetDescription() {
+		return petDescription;
+	}
+	
 	public int getWeight() {
 		return weight;
 	}
