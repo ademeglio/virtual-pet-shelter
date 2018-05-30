@@ -35,6 +35,10 @@ public class VirtualPetShelter {
 			pet.water(qty);
 		}
 	}
+
+	public void playWith(String petName, int val) {
+		virtualPets.get(petName).play(val);
+	}
 	
 	
 

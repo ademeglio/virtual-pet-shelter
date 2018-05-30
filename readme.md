@@ -93,7 +93,7 @@ _(Hint: you can use tab characters (“\t”) to align console output in columns
     * [x] allow adoption of a homeless pet
     * [x] feed all of the pets in the shelter
     * [x] water all of the pets in the shelter
-    * [ ] plays (or performs some other interaction(s)) with an individual pet in the shelter
+    * [x] plays (or performs some other interaction(s)) with an individual pet in the shelter
     * [ ] include a `tick` method that calls the `tick` method for each of the pets in the shelter, updating their needs
 
 ### VirtualPet class

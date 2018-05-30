@@ -84,6 +84,18 @@ public class VirtualPetShelterTest {
 		assertEquals(pet1ThirstLevelEnd, pet1ThirstLevelStart - 2 );
 	}
 	
-	
+	@Test
+	public void playWithIndividualPetInShelterBoredomTo0() {
+		// Act
+		underTest.addPet(pet1);
+		underTest.addPet(pet2);
+		int roverBoredomLevelStart = pet1.getBored();
+		underTest.playWith("Rover", 1);
+		int roverBoredomLevelEnd = pet1.getBored();
+		// Assert
+		assertEquals(roverBoredomLevelEnd, roverBoredomLevelStart - 1 );
+		
+		
+	}
 	
 } // End VirtualPetShelterTest();
