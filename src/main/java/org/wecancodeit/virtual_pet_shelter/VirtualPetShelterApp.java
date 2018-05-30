@@ -34,21 +34,87 @@ public class VirtualPetShelterApp {
 		Scanner userInput = new Scanner(System.in);
 //		Welcome
 		
-		System.out.println("Welcome to the DeMegz Sanctuary! Thank you for volunteering to help care"
-				+ "\nfor these fun little creatures! They can be a little finicky but they make great"
-				+ "\n pets and I'm sure you'll be fine. All you have to do is feed them, give them"
-				+ "\nwater and play with them. I'm sure after a short while, you'll want to adopt and"
-				+ "\ntake one home for yourself!");
+		System.out.println("Welcome to the DeMegz Sanctuary!\n\nThank you for volunteering to help care"
+				+ " for these fun little creatures! They\ncan be a little finicky but they make great"
+				+ " pets and I'm sure you'll be fine.\nAll you have to do is feed them, give them"
+				+ "water and play with them. I'm sure\nafter a short while, you'll want to adopt and"
+				+ " take one home for yourself!\n");
 		
 //		Game Loop
 		while (true) {
 			// pet status
 			petShelter.allPetStatus(petCollection);
 			
+			System.out.println("What would you like to do (1 - 6)? \n");
+			
 			// menu
 			
+			System.out.println(" 1. Feed the pets\t\t4. Adopt a pet"
+						   + "\n 2. Water the pets\t\t5. Admit a pet"
+						   + "\n 3. Play with a pet\t\t6. Quit");
+			
+			String response = userInput.nextLine();
+			
+			switch(response) {
+			
+			case "1" : // Feed the pets
+				petShelter.feedAll(petCollection, 1);
+				break;
+			
+			case "2" : // Water the pets
+				petShelter.waterAll(petCollection, 1);
+				break;
+			
+			case "3": // Play with a pet
+				System.out.println("How fun! Who would you like to play with? Please choose one or \"Quit\":");
+				boolean selectionMade = false;
+				
+				while (!selectionMade) { // loop through until a proper selection is made.
+					for (VirtualPet pet : petCollection) {
+						System.out.println("[" + pet.getPetName() + "] " + pet.getPetDescription() );
+					}
+					response = userInput.nextLine();
+					VirtualPet currentPet = petShelter.findPet(response);
+							
+					if (petCollection.contains(currentPet)) {
+						petShelter.playWith(response, 2);;
+						System.out.println("I think " + currentPet.getPetName() + " is having a great time with you!");
+						selectionMade = true;
+					} else if (response.toLowerCase().equals("quit")){
+						break;
+					} else {
+						System.out.println("Please pick a name from the list or 'quit'. Thank you.");
+					}
+				} // end pick a pet to play with	
+				break;
+				
+			case "4": // Adopt a pet
+				System.out.println("We knew you couldn't resist! Who would you like to adopt? Type their name or quit to cancel");
+				selectionMade = false;
+				while (!selectionMade) {
+					for (VirtualPet pet : petCollection) {
+						System.out.println("[" + pet.getPetName() + "] " + pet.getPetDescription() );
+					}
+					response = userInput.nextLine();
+
+					petShelter.addPet(petShelter.findPet(response));
+				}
+				break;				
+				
+			case "5": //TODO Admit a pet
+
+				break;				
+
+			case "6": // Quit
+				userInput.close();
+				System.exit(0);
+				
+			default :
+				System.out.println("Please make a valid selection (1 - 6)");
+			} // end switch
+			
 			// tick
-			break;
+			petShelter.updateAllTick(petCollection);
 		} // End Game Loop
 
 	} // End Main

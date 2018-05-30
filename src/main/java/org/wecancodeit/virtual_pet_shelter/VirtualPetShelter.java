@@ -49,10 +49,13 @@ public class VirtualPetShelter {
 	
 	// iterate through pets and display them
 	public void allPetStatus(Collection<VirtualPet> pets) {
+		System.out.println("DEMEGZ NAME\t|HUNGER\t|THIRST\t|BOREDOM|TIRED  |");
+		System.out.println("----------------|-------|-------|-------|-------|");
 		for (VirtualPet pet : pets) {
 			System.out.println(pet.getPetName() + "\t\t| " + pet.getHunger()
-				+ "\t\t| " + pet.getThirst() + "\t\t| " + pet.getBored()
-				+ "\t\t| " + pet.getTired() + "\t\t| ");
+				+ "\t| " + pet.getThirst() + "\t| " + pet.getBored()
+				+ "\t| " + pet.getTired() + "\t| ");
 		}
+		System.out.println("-------------------------------------------------");
 	}
 }
