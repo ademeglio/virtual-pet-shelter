@@ -71,22 +71,22 @@ Ok, you play with Tommy.
 ## Required Tasks to be completed in the order you feel is necessary
 ### VirtualPetShelterApp class
   * Create a `main` method that…
-    * [ ] implements a game loop.
-    * [ ] asks for user input.
-    * [ ] writes output to the console.
-    * [ ] calls `VirtualPetShelter`’s `tick` method after each interaction
+    * [x] implements a game loop.
+    * [x] asks for user input.
+    * [x] writes output to the console.
+    * [x] calls `VirtualPetShelter`’s `tick` method after each interaction
   * Available user interface actions should include (at minimum)…
-    * [ ] feeding all the pets
-    * [ ] watering all the pets
-    * [ ] playing with an individual pet, which should display a list of pet names and descriptions, allowing a user to select one
-    * [ ] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
-    * [ ] allow intake of a pet, prompting the user for the pet’s information, requiring the user to (at minimum) specify name and description
+    * [x] feeding all the pets
+    * [x] watering all the pets
+    * [x] playing with an individual pet, which should display a list of pet names and descriptions, allowing a user to select one
+    * [x] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
+    * [x] allow intake of a pet, prompting the user for the pet’s information, requiring the user to (at minimum) specify name and description
 
 _(Hint: you can use tab characters (“\t”) to align console output in columns.)_
 
 ### VirtualPetShelter class
   * [x] include appropriate instance variable(s) to store the pets who reside at the shelter
-  * [ ] include methods that:
+  * [x] include methods that:
     * [x] return a Collection of all of the pets in the shelter
     * [x] return a specific VirtualPet given its name
     * [x] allow intake of a homeless pet
