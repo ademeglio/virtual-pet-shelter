@@ -109,6 +109,6 @@ Do **not** include a default (zero arguments) constructor.
 
 
 ## Stretch Tasks
-  * [ ]Consider any stretch tasks from last week’s project that you did not attempt.
+  * [ ] Consider any stretch tasks from last week’s project that you did not attempt.
   * [ ] Keep track of the cleanliness of individual pets’ cages and offer an option in the user interface to clean pet cages
   * [ ] DNA! In order to give your pets individual character, include as part of each pet’s state one or more multipliers for needs so that one pet may become hungrier/thirstier/more bored slower/faster than another pet. (Tip: you could create a class to encapsulate this.)
